@@ -1142,7 +1142,7 @@ MBBS-01 (y) *maxBlockBodySize* must not exceed 122,880 Bytes (120KB)
 MBBS-02 (y) *maxBlockBodySize* must not be lower than 24,576 Bytes
 (24KB)
 
-MBBS-03a (x - exceptional circumstances) *maxBlockBodySize* must not
+MBBS-03a (x - "exceptional circumstances") *maxBlockBodySize* must not
 be decreased, other than in exceptional circumstances where there are
 potential problems with security, performance, functionality or
 long-term sustainability
@@ -1288,7 +1288,7 @@ MBHS-01 (y) *maxBlockHeaderSize* must not exceed 5,000 Bytes
 
 MBHS-02 (y) *maxBlockHeaderSize* must not be negative
 
-MBHS-03 (x - largest valid header is subject to change)
+MBHS-03 (x - "largest valid header" is subject to change)
 *maxBlockHeaderSize* must be large enough for the largest valid header
 
 MBHS-04 (x - "should") *maxBlockHeaderSize* should only normally be
@@ -1438,7 +1438,7 @@ be less than *maxTxSize*
 MVS-04 (~ - no access to existing parameter values) *maxValueSize* must
 not be reduced
 
-MVS-05 (x - sensible output is subject to interpretation)
+MVS-05 (x - "sensible output" is subject to interpretation)
 *maxValueSize* must be large enough to allow sensible outputs (e.g. any
 existing on-chain output or anticipated outputs that could be produced
 by new ledger rules)
