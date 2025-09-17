@@ -69,7 +69,7 @@ freedom to take another path.
     Constitutional Committee.
 
 7.  Delegated Representative (DRep). The individual or entity registered
-    to vote with respect to on-chain governance actions for its own
+    to vote with respect to on-chain governance actions on its own
     behalf or on behalf of other Ada Holders.
 
 8.  Net Change Limit. The maximum allowed amount or percentage of
@@ -96,7 +96,7 @@ freedom to take another path.
 
 The following Tenets shall guide all Cardano Community members and
 proposed governance actions shall be evaluated in accordance with these
-Tenets. The order in which the below Tenets appear is not intended to
+Tenets. The order in which the Tenets below appear is not intended to
 represent a priority among Tenets.
 
 TENET 1 Transactions on the Cardano Blockchain shall not be slowed down
@@ -106,7 +106,7 @@ TENET 2 The cost of transactions on the Cardano Blockchain shall be
 predictable and not unreasonable.
 
 TENET 3 Anyone desiring to develop and deploy applications on the
-Cardano Blockchain shall not unreasonably be prevented from developing
+Cardano Blockchain shall not be unreasonably prevented from developing
 and deploying such applications as intended.
 
 TENET 4 Contributions by the Cardano Community on the Cardano Blockchain
@@ -193,7 +193,7 @@ account. The total supply of ada shall not exceed 45,000,000,000
     voting stake at any time.
 
 6.  Ada Holders who use third-party custodians or other designees to hold
-    their ada may authorize, or withhold authorization from, such
+    their ada may authorize or withhold authorization from, such
     third parties to vote or delegate the Ada Holders' voting rights to
     registered DReps on the Ada Holders' behalf.
 
@@ -225,7 +225,7 @@ account. The total supply of ada shall not exceed 45,000,000,000
     their activities as a DRep is publicly disclosed in a timely
     manner through relevant governance communication channels.
 
-4.  DReps shall not offer or provide compensation to an Ada Holder or in
+4.  DReps shall not offer or provide compensation to an Ada Holder in
     exchange for being appointed as a DRep or for voting on their behalf.
 
 ### **Section 5 Stake Pool Operators**
@@ -239,7 +239,7 @@ account. The total supply of ada shall not exceed 45,000,000,000
 1.  To ensure transparency in on-chain governance, proposed governance
     actions shall follow a standardized and legible format before
     being recorded or enacted on-chain. This format shall include a
-    URL, hosting a document that outlines additional context for the
+    URL hosting a document that outlines additional context for the
     proposed governance action, and the hash of this document. The
     document hosted by such a URL shall be immutable and incapable of
     being altered after submission, and the content of every on-chain
@@ -328,7 +328,7 @@ requirements at Section 6, meet all of the following requirements:
 
 1.  The CC shall be considered to be in one of the following two states
     at all times: a state of confidence or a state of no confidence.
-    In a state of no confidence, members of the then standing CC must
+    In a state of no confidence, members of the then-standing CC must
     be reinstated or replaced using the "Update Committee" action
     before any other on-chain governance action, other than "Info"
     actions, may go forward. 
@@ -364,12 +364,11 @@ requirements at Section 6, meet all of the following requirements:
 ### **Section 1 Amendment Rules**
 
 Amendments to this Constitution, including the Cardano Blockchain
-Guardrails Appendix, shall require approval through a collective
-decision-making process, by means of an on-chain governance action
-supported by at least 65% of the then active voting stake, unless
-a different threshold is expressly provided in the Cardano Blockchain
-Guardrails Appendix for the amendment of a particular Guardrail, in
-which case that specified threshold shall apply.
+Guardrails Appendix, shall require approval via an on-chain governance
+action supported by at least 65% of the active voting stake at that
+time, unless a different threshold is expressly provided in the Cardano
+Blockchain Guardrails Appendix for the amendment of a particular
+Guardrail, in which case that threshold shall apply.
 
 **APPENDIX I. CARDANO BLOCKCHAIN GUARDRAILS**
 ---------------------------------------------
@@ -731,7 +730,7 @@ view.
 ##### **GUARDRAILS**
 
 PARAM-03a (y) A parameter that is critical to the operation of the
-blockchain require an SPO vote in addition to a DRep vote: SPOs must say
+blockchain requires an SPO vote in addition to a DRep vote: SPOs must say
 "yes" with a collective support of more than 50% of all active block
 production stake. This is enforced by the Guardrails on the stake pool
 voting threshold.
@@ -1133,13 +1132,13 @@ per-block memory unit limits
 
 #### **Block Size (maxBlockBodySize)**
 
-The maximum size of a block, in Bytes.
+The maximum size of a block, in bytes.
 
 ##### **GUARDRAILS**
 
-MBBS-01 (y) *maxBlockBodySize* must not exceed 122,880 Bytes (120KB)
+MBBS-01 (y) *maxBlockBodySize* must not exceed 122,880 bytes (120KB)
 
-MBBS-02 (y) *maxBlockBodySize* must not be lower than 24,576 Bytes
+MBBS-02 (y) *maxBlockBodySize* must not be lower than 24,576 bytes
 (24KB)
 
 MBBS-03a (x - exceptional circumstances) *maxBlockBodySize* must not
@@ -1152,7 +1151,7 @@ must be large enough to include at least one transaction (that is,
 *maxBlockBodySize* must be at least *maxTxSize*)
 
 MBBS-05 (x - "should") *maxBlockBodySize* should be changed by at most
-10,240 Bytes (10KB) per epoch (5 days), and preferably by 8,192 Bytes
+10,240 bytes (10KB) per epoch (5 days), and preferably by 8,192 bytes
 (8KB) or less per epoch
 
 MBBS-06 (x - "should") The block size should not induce an additional
@@ -1171,11 +1170,11 @@ benchmarking and monitoring results
 
 #### **Transaction Size (maxTxSize)**
 
-The maximum size of a transaction, in Bytes.
+The maximum size of a transaction, in bytes.
 
 ##### **GUARDRAILS**
 
-MTS-01 (y) *maxTxSize* must not exceed 32,768 Bytes (32KB)
+MTS-01 (y) *maxTxSize* must not exceed 32,768 bytes (32KB)
 
 MTS-02 (y) *maxTxSize* must not be negative
 
@@ -1186,8 +1185,8 @@ MTS-04 (~ - no access to existing parameter values) *maxTxSize* must
 not exceed *maxBlockBodySize*
 
 MTS-05 (x - "should") *maxTxSize* should not be increased by more than
-2,560 Bytes (2.5KB) in any epoch, and preferably should be increased by
-2,048 Bytes (2KB) or less per epoch
+2,560 bytes (2.5KB) in any epoch, and preferably should be increased by
+2,048 bytes (2KB) or less per epoch
 
 MTS-06 (x - "should") *maxTxSize* should not exceed 1/4 of the block
 size
@@ -1284,7 +1283,7 @@ The size of the block header.
 
 ##### **GUARDRAILS**
 
-MBHS-01 (y) *maxBlockHeaderSize* must not exceed 5,000 Bytes
+MBHS-01 (y) *maxBlockHeaderSize* must not exceed 5,000 bytes
 
 MBHS-02 (y) *maxBlockHeaderSize* must not be negative
 
@@ -1428,7 +1427,7 @@ The limit on the serialized size of the Value in each output.
 
 ##### **GUARDRAILS**
 
-MVS-01 (y) *maxValueSize* must not exceed 12,288 Bytes (12KB)
+MVS-01 (y) *maxValueSize* must not exceed 12,288 bytes (12KB)
 
 MVS-02 (y) *maxValueSize* must not be negative
 
@@ -1571,7 +1570,7 @@ DRA-04 (~ - no access to existing parameter values) *dRepActivity* must
 be greater than *govActionLifetime*
 
 DRA-05 (x - "should") *dRepActivity* should be calculated in human
-terms ( 60 days etc)
+terms (60 days, etc.)
 
 #### **DRep and SPO Governance Action Thresholds (dRepVotingThresholds[...],poolVotingThresholds[...])**
 
@@ -1654,7 +1653,7 @@ epochs (10 days)
 GAL-02 (y) *govActionLifetime* must not exceed 15 epochs (75 days)
 
 GAL-04 (x - "should") *govActionLifetime* should be calibrated in
-human terms (eg 30 days, two weeks), to allow sufficient time for voting
+human terms (e.g., 30 days, two weeks), to allow sufficient time for voting
 etc. to take place
 
 GAL-05 (~ - no access to existing parameter values) *govActionLifetime*
@@ -1906,7 +1905,7 @@ The governance parameter group consists of:
 
 -   *governance action maximum lifetime in epochs* (*govActionLifetime*)
 
--   governance action deposit* (*govDeposit*)
+-   *governance action deposit* (*govDeposit*)
 
 -   *DRep deposit amount* (*dRepDeposit*)
 
@@ -1931,10 +1930,10 @@ The Cardano Blockchain was established in 2017. In July 2020 the Cardano
 Blockchain was expanded to include independent block validators and in
 September 2024 an on-chain governance system was introduced. This
 Constitution outlines the rights and responsibilities of governance
-actors in the decentralized system who represent the Ada Holders, the
-governance token of the Cardano Blockchain. The Cardano Blockchain is a
-decentralized ecosystem of blockchain technology, smart contracts, and
-community governance.
+actors in the decentralized system who represent the Ada Holders; ada is
+the governance token of the Cardano Blockchain. The Cardano Blockchain
+is a decentralized ecosystem of blockchain technology, smart contracts,
+and community governance.
 
 In approaching this Constitution, the Cardano Community recognizes that
 this is not a constitution for only a blockchain but rather a
